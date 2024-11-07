@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+
+
+
+/* Tablet Media Query */
+
+
+/* End of Tablet Query */
+
+
+
+/*===== Desktop Media Query =====*/
+
+
+/*===== End of Desktop Query =======*/
+
+footer {
+    text-align: center;
+    padding: 1%;
+    background-color: #b9b9b9;
+}
