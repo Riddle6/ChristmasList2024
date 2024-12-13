@@ -11,7 +11,9 @@
 }
 
 body {
-    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #e1eaf7;
 }
 
 
@@ -78,6 +80,12 @@ main p {
     display: block;
 }
 
+#iPhone {
+    border: thin #000 solid;
+}
+
+
+
 /*====== Media Cards =========*/
 .gift {
     display: grid;
@@ -103,83 +111,119 @@ main p {
     border-radius: 15px 15px 0 0;
 }
 
+#gift-image1 {
+    background-image: url(../images/money-2082383_1280.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+#gift-image2 {
+    background-image: url(../images/iphone.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 15px 15px 0 0;
+}
+
+#gift-image3 {
+    background-image: url(../images/video-game-console.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+#gift-image4 {
+    background-image: url(../images/coal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+}
+
 .height {
     max-width: 750px;
     min-width: 310px;
 }
 
-.card1 {
+#shop-img {
+    margin-top: 0.9%;
+    opacity: 0;
+    transition: 0.6s
+}
+
+
+
+#card1 {
     display: block;
     margin-left: auto;
     margin-right: 40%;
     width: 40%;
-    margin-top: 5%;
+    margin-top: 10%;
 }
 
-.card2 {
+#card2 {
     display: block;
     margin-left: auto;
     margin-right: 40%;
     width: 40%;
-    margin-top: 5%;
+    margin-top: 10%;
 }
 
-.card3 {
+#card3 {
     display: block;
     margin-left: auto;
     margin-right: 40%;
     width: 40%;
-    margin-top: 5%;
+    margin-top: 10%;
 }
 
-.card4 {
+#card4 {
     display: block;
     margin-left: auto;
     margin-right: 40%;
     width: 40%;
-    margin-top: 5%;
+    margin-top: 10%;
 }
 
-.card5 {
+#card5 {
     display: block;
     margin-left: auto;
     margin-right: 40%;
     width: 40%;
-    margin-top: 5%;
+    margin-top: 10%;
 }
 
-.card6 {
+#card6 {
     display: block;
     margin-left: auto;
     margin-right: 40%;
     width: 40%;
-    margin-top: 5%;
+    margin-top: 10%;
 }
 
-.card7 {
+#card7 {
     display: block;
     margin-left: auto;
     margin-right: 40%;
     width: 40%;
-    margin-top: 5%;
+    margin-top: 10%;
 }
 
-.card8 {
+#card8 {
     display: block;
     margin-left: auto;
     margin-right: 40%;
     width: 40%;
-    margin-top: 5%;
+    margin-top: 10%;
 }
 
-.card9 {
+#card9 {
     display: block;
     margin-left: auto;
     margin-right: 40%;
     width: 40%;
-    margin-top: 5%;
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
-
 
 /*===== End of Media cards ======*/
 
@@ -217,74 +261,122 @@ main p {
         background-color: #000;
     }
 
-    .gift {
-        grid-template-rows: max-content 300px 1fr;
+    #shop-img {
+        margin-top: 0.9%;
+        opacity: 0;
+        transition: 0.6s
     }
 
-    .height {
-        max-width: 380px;
-        min-width: 340px;
+    .container {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 39% 39%;
+        grid-template-areas: 
+            "card1 card2"
+            "card3 card4"
+            "card5 card6"
+            "card7 card8";
+        grid-gap: 2%;
     }
 
-    .card1 {
+    #card1 {
         display: block;
-        margin-left: 15%;
-        margin-top: 0;
-        margin-bottom: 15%;
+        margin-top: 5%;
     }
 
-    .card2 {
-        display: block;
-        margin-right: 1px;
-        margin-top: -33%;
+    #card1:hover {
+        #shop-img {
+            opacity: 1;
+        }
     }
 
-    .card3 {
+    #card2 {
         display: block;
-        margin-right: auto;
-        margin-left: 6%;
-        margin-bottom: 15%;
+        margin-top: 5%;
     }
 
-    .card4 {
-        display: block;
-        margin-right: 6%;
-        margin-left: auto;
-        margin-top: -33%;
+    #card2:hover {
+        #shop-img {
+            opacity: 1;
+        }
     }
 
-    .card5 {
+    #card3 {
         display: block;
-        margin-right: auto;
-        margin-left: 6%;
-        margin-bottom: 15%;
+        margin-top: 5%;
     }
 
-    .card6 {
-        display: block;
-        margin-right: 6%;
-        margin-left: auto;
-        margin-top: -33%;
+    #card3:hover {
+        #shop-img {
+            opacity: 1;
+        }
     }
 
-    .card7 {
+    #card4 {
         display: block;
-        margin-right: auto;
-        margin-left: 6%;
-        margin-bottom: 15%;
+        margin-top: 5%;
     }
 
-    .card8 {
-        display: block;
-        margin-right: 6%;
-        margin-left: auto;
-        margin-top: -33%;
+    #card4:hover {
+        #shop-img {
+            opacity: 1;
+        }
     }
 
-    .card9 {
+    #card5 {
         display: block;
-        margin-right: auto;
-        margin-left: auto;
+        margin-top: 5%;
+    }
+
+    #card5:hover {
+        #shop-img {
+            opacity: 1;
+        }
+    }
+
+    #card6 {
+        display: block;
+        margin-top: 5%;
+    }
+
+    #card6:hover {
+        #shop-img {
+            opacity: 1;
+        }
+    }
+
+    #card7 {
+        display: block;
+        margin-top: 5%;
+    }
+
+    #card7:hover {
+        #shop-img {
+            opacity: 1;
+        }
+    }
+
+    #card8 {
+        display: block;
+        margin-top: 5%;
+    }
+
+    #card8:hover {
+        #shop-img {
+            opacity: 1;
+        }
+    }
+
+    #card9 {
+        display: block;
+        margin-top: 7%;
+        margin-bottom: 40%;
+    }
+
+    #card9:hover {
+        #shop-img {
+            opacity: 1;
+        }
     }
 
 }
@@ -316,9 +408,134 @@ main p {
         background-color: #111;
     }
 
-    .card1 {
-        
+    #shop-img {
+        margin-top: 0.9%;
+        opacity: 0;
+        transition: 0.6s
     }
+
+    .container {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 29% 29% 29%;
+        grid-template-areas: 
+            "card1 card2 card3"
+            "card4 card5 card6"
+            "card7 card8 card9";
+        grid-gap: 2%;
+    }
+
+    #card1 {
+        grid-area: card1;
+        display: block;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    #card1:hover {
+        #shop-img {
+            opacity: 1;
+        }
+    }
+
+    #card2 {
+        grid-area: card2;
+        display: block;
+        margin-top: 5%;
+    }
+
+    #card2:hover {
+        #shop-img {
+            opacity: 1;
+        }
+    }
+
+    #card3 {
+        grid-area: card3;
+        display: block;
+        margin-top: 5%;
+    }
+
+    #card3:hover {
+        #shop-img {
+            opacity: 1;
+        }
+    }
+
+    #card4 {
+        grid-area: card4;
+        display: block;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    #card4:hover {
+        #shop-img {
+            opacity: 1;
+        }
+    }
+
+    #card5 {
+        grid-area: card5;
+        display: block;
+        margin-top: 5%;
+    }
+
+    #card5:hover {
+        #shop-img {
+            opacity: 1;
+        }
+    }
+
+    #card6 {
+        grid-area: card6;
+        display: block;
+        margin-top: 5%;
+    }
+
+    #card6:hover {
+        #shop-img {
+            opacity: 1;
+        }
+    }
+
+    #card7 {
+        grid-area: card7;
+        display: block;
+        margin-top: 5%;
+    }
+
+    #card7:hover {
+        #shop-img {
+            opacity: 1;
+        }
+    }
+
+    #card8 {
+        grid-area: card8;
+        display: block;
+        margin-top: 5%;
+    }
+
+    #card8:hover {
+        #shop-img {
+            opacity: 1;
+        }
+    }
+
+    #card9 {
+        grid-area: card9;
+        display: block;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    #card9:hover {
+        #shop-img {
+            opacity: 1;
+        }
+    }
+
 
 } /*===== End of Desktop Query =======*/
 
@@ -327,5 +544,5 @@ footer {
     margin-top: 5%;
     text-align: center;
     padding: 1%;
-    background-color: #b9b9b9;
+    background-color: #f6f3f3;
 }
