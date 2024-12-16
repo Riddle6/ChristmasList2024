@@ -72,8 +72,13 @@ img {
 
 
 main p {
-    font-size: 1.5em;
+    font-size: 2em;
     padding: 2%;
+    border: #000 thin solid;
+}
+
+main p a {
+    color: #f83f3f;
 }
 
 #hero {
