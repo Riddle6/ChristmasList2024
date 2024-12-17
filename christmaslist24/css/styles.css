@@ -1,6 +1,10 @@
 /* Font families */
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Mountains+of+Christmas:wght@400;700&display=swap');
-/* "Mountains of Christmas" */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Mountains+of+Christmas:wght@400;700&family=Roboto:wght@300;400;500&display=swap');
+/* 
+"Mountains of Christmas" 
+"Roboto"
+
+*/
 
 
 * {
@@ -75,10 +79,18 @@ main p {
     font-size: 2em;
     padding: 2%;
     border: #000 thin solid;
+    margin-bottom: 3%;
+    font-family: "Roboto", sans-serif;
 }
 
 main p a {
     color: #f83f3f;
+    text-decoration: underline;
+}
+
+h2 a {
+    text-decoration: underline;
+    color: #919199
 }
 
 #hero {
@@ -91,7 +103,8 @@ main p a {
 
 
 
-/*====== Media Cards =========*/
+/*====== Media Cards Section =========*/
+
 .gift {
     display: grid;
     grid-template-rows: max-content 250px 1fr;
@@ -109,6 +122,7 @@ main p a {
     padding: 1%;
 }
 
+/*== PlaceHolder Image ==*/
 #gift-image {
     background-image: url(../images/christmas-gift.jpg);
     background-repeat: no-repeat;
@@ -116,6 +130,7 @@ main p a {
     border-radius: 15px 15px 0 0;
 }
 
+/*==== Images for items on main page ====*/
 #gift-image1 {
     background-image: url(../images/money-2082383_1280.png);
     background-repeat: no-repeat;
@@ -144,6 +159,35 @@ main p a {
     border-radius: 15px;
 }
 
+#gift-image5 {
+    background-image: url(../images/laptop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+#gift-image6 {
+    background-image: url(../images/shoes.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+#gift-image7 {
+    background-image: url(../images/nintendo-switch.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+#gift-image8 {
+    background-image: url(../images/tablet.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+
 .height {
     max-width: 750px;
     min-width: 310px;
@@ -156,13 +200,21 @@ main p a {
 }
 
 
-
+/*====== Media Cards ======*/
 #card1 {
     display: block;
     margin-left: auto;
     margin-right: 40%;
     width: 40%;
     margin-top: 10%;
+}
+
+#card1:hover {
+    /*==== Transitions the shop icon to appear when
+           user hovers over the card =============*/
+    #shop-img {
+        opacity: 1;
+    }
 }
 
 #card2 {
@@ -173,12 +225,24 @@ main p a {
     margin-top: 10%;
 }
 
+#card2:hover {
+    #shop-img {
+        opacity: 1;
+    }
+}
+
 #card3 {
     display: block;
     margin-left: auto;
     margin-right: 40%;
     width: 40%;
     margin-top: 10%;
+}
+
+#card3:hover {
+    #shop-img {
+        opacity: 1;
+    }
 }
 
 #card4 {
@@ -189,12 +253,24 @@ main p a {
     margin-top: 10%;
 }
 
+#card4:hover {
+    #shop-img {
+        opacity: 1;
+    }
+}
+
 #card5 {
     display: block;
     margin-left: auto;
     margin-right: 40%;
     width: 40%;
     margin-top: 10%;
+}
+
+#card5:hover {
+    #shop-img {
+        opacity: 1;
+    }
 }
 
 #card6 {
@@ -205,12 +281,24 @@ main p a {
     margin-top: 10%;
 }
 
+#card6:hover {
+    #shop-img {
+        opacity: 1;
+    }
+}
+
 #card7 {
     display: block;
     margin-left: auto;
     margin-right: 40%;
     width: 40%;
     margin-top: 10%;
+}
+
+#card7:hover {
+    #shop-img {
+        opacity: 1;
+    }
 }
 
 #card8 {
@@ -221,6 +309,12 @@ main p a {
     margin-top: 10%;
 }
 
+#card8:hover {
+    #shop-img {
+        opacity: 1;
+    }
+}
+
 #card9 {
     display: block;
     margin-left: auto;
@@ -228,6 +322,12 @@ main p a {
     width: 40%;
     margin-top: 10%;
     margin-bottom: 10%;
+}
+
+#card9:hover {
+    #shop-img {
+        opacity: 1;
+    }
 }
 
 /*===== End of Media cards ======*/
@@ -548,6 +648,6 @@ main p a {
 footer {
     margin-top: 5%;
     text-align: center;
-    padding: 1%;
+    padding: 2%;
     background-color: #f6f3f3;
 }
